@@ -7,23 +7,28 @@ using namespace std;
 int main()
 {
     int num1, num2, result;
-    char op;
+    char opr;
     cout << "Enter two numbers: ";
     cin >> num1 >> num2;
     cout << "Enter an operator: ";
-    cin >> op;
-    switch (op)
+    cin >> opr;
+
+    switch (opr)
     {
+        //ADD
     case '+':
         result = num1 + num2;
         break;
     case '-':
+        // MINUS
         result = num1 - num2;
         break;
     case '*':
+        //MULTI
         result = num1 * num2;
         break;  
     case '/':   
+        //DIV
         result = num1 / num2;
         break;
     case '^':
@@ -35,6 +40,7 @@ int main()
     default:
         cout << "Invalid operator";
     }
+
     cout << "Result: " << result;
     return 0;
 }
