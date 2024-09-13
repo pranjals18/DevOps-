@@ -12,23 +12,29 @@ int main()
     cin >> num1 >> num2;
     cout << "Enter an operator: ";
     cin >> op;
+
     switch (op)
     {
+        //ADD
     case '+':
         result = num1 + num2;
         break;
     case '-':
+        // MINUS
         result = num1 - num2;
         break;
     case '*':
+        //MULTI
         result = num1 * num2;
         break;  
     case '/':   
+        //DIV
         result = num1 / num2;
         break;
     default:
         cout << "Invalid operator";
     }
+
     cout << "Result: " << result;
     return 0;
 }
