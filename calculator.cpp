@@ -7,13 +7,14 @@ using namespace std;
 int main()
 {
     int num1, num2, result;
-    char opr;
+
+    char operation;
     cout << "Enter two numbers: ";
     cin >> num1 >> num2;
     cout << "Enter an operator: ";
-    cin >> opr;
+    cin >> operation;
+    switch (operation)
 
-    switch (opr)
     {
         //ADD
     case '+':
